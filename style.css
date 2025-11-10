@@ -1,44 +1,79 @@
 body {
+    /* Zerar margem do corpo do site */
     margin: 0;
+    /* Zerar o espaçamento interno  */
     padding: 0 0 0 0;
+    /* Altera cor de fundo do site  */
     background-color: rgb(253, 247, 187);
+    /* alterar fonte do texto  */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Ajusta o layout do site  */
     display: flex;
+    /* Deixa os elementos do site ao centro na horizontal */
     justify-content: center;
+    /* Deixa os elementos ao centro na vertical  */
     align-items: center;
+    /* Utilizar altura 100% do site  */
     height: 100vh;
 }
 .profile{
+    /* Alinha os elementos ao centro  */
+    text-align: center;
+    /* Espaçamento interno dos elementos  */
     padding: 5px;
+    /* Cor do texto  */
     color:purple;
+    /* Utilizar altura 100% do site  */
     align-items: center;
 }
 .profile img{
+    /* Define a largura da imagem  */
     width: 200px;
+    /* Define a altura da imagem  */
     height: 200px;
+    /* Arredonda em 50% os cantos da imagem  */
     border-radius: 50%;
+    /* Define a borda com verdadeira e a cor da borda  */
     border: solid purple;
+    /* Não sei  */
     object-fit: cover;
+    /* Define a largura da borda  */
     margin-bottom: 15px;
 }
 .profile p{
+    /* Define o tamanho do texto  */
     font-size: 14px;
+    /* Define o espaçamento entre os textos  */
     margin-bottom: 20px;
 }
 /* Botões de link */
 .links .btn {
+    /* Faz com que os botões fiquem um de baixo do outro  */
     display: block;
+    /* Define a largura do botão a 100% */
     width: 100%;
+    /* Define a cor do fundo do botão  */
     background-color: white;
-    color: #2d2a52;
+    /* Define a cor do texto do botão  */
+    color: purple;
+    /* Remove o sublihadoi do texto  */
     text-decoration: none;
+    /* Espaçamento interno dos elementos  */
     padding: 10px 0;
+    /* Arredonda as bordas dos botões  */
     border-radius: 10px;
+    /* Define o espaçamento entre os botões  */
     margin-bottom: 10px;
+    /* Transição entre o .bnt e o .bnt:hover  */
     transition: background 0.3s;
+    /* Alinha o texto ao centro  */
     text-align: center;
 }
 
+/* Quando o mouse passa por cima do botão  */
 .links .btn:hover {
-    background-color: #ddd;
+    /* Cor do fundo quando mouse passa por cima  */
+    background-color: purple;
+    /* Cor do texto quando o mouse passa por cima  */
+    color:white
 }
