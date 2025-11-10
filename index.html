@@ -1,28 +1,62 @@
+<!-- Avisa o navegador da versão que o HTML tá  -->
 <!DOCTYPE html>
+<!-- Avisa o navegador o idioma do site  -->
 <html lang="pt-br">
 
+<!-- Cabeça do site  -->
 <head>
+  <!-- "Tamanho" dos elementos  -->
     <meta charset="UTF-8">
+    <!-- Mostra qual estilo é pro site usar  -->
     <link rel="stylesheet" href="style.css">
+    <!-- Define o icon que aparece do lado do nome da guia do site  -->
     <link rel="icon" type="image/png" href="Flor.svg">
+    <!-- Define o nome da guia do site -->
     <title>Site perfil</title>
+    <!-- Fecha a cabeça do site  -->
 </head>
 
+<!-- Tudo oq apárece no site  -->
 <body>
 
+    <!-- Classifica o bloco de código  -->
     <div class="profile">
+      <!-- Chama uma imagem para o body, Texto que aparece quando não tem a imagem, Altura e largura da imagem, Quebra de linha  -->
         <img src="file (1).jpeg" alt="Foto de perfil" width="200" height="200"><br>
+        <!-- Define o tamanho do texto para o maior possível, Texto que aparece  -->
         <h1>Giovanna Barros da Silva</h1>
-        <h3>Estudante do EM<br>
-            Curso de Densenvolvimento de Sistemas</h3>
+        <!-- Define o tamanho do texto para o 4 maior tamanho, Texto que aparece, Quebra de linha, Fecha o paragráfo  -->
+        <h4>Estudante do EM<br>
+            Curso de Densenvolvimento de Sistemas</h4>
+            <!-- Define como paragráfo o texto, Texto que aparece, Fecha o paragráfo  -->
         <p>Seja bem vindo(a) a minha página!</p>
-    </div>
 
-      <div class="links">
-        <a href="facebook.com" class="btn">Instagram</a>
+     <!-- Classifica o bloco de código  -->
+     <div class="links">
+      <!-- Define um link da web para um texto  -->
+        <a href="" class="btn">Instagram</a>
+        <!-- Define um link da web para um texto  -->
         <a href="#" class="btn">TikTok</a>
+        <!-- Define um botão, Classifica a classe para botão, Quando clica chama a função mostrarMensagem, Texto que aparece, Fecha o código do botão  -->
+        <button class="btn" onclick="mostrarMensagem()">Clique aqui</button>
+        <!-- Diz oq irá aparecer quando o botão for clicado baseado no id mensagem, fecha o paragráfo  -->
+        <p id="mensagem"></p> 
+
+      <!-- Fecha a classe  -->
       </div>
+      <!-- Fecha a classe  -->
     </div>
+    <!-- Abre um comando de script  -->
+    <script>
+      // Cria uma função 
+          function mostrarMensagem() {
+            // Define oq a função faz, Define oq o id mensagem faz 
+            document.getElementById("mensagem").innerText = "Olá, você clicou no botão!";
+          }
+          // Fecha o comando de script 
+        </script>
+        <!-- Fecha o body  -->
 </body>
 
+<!-- Encerra o código  -->
 </html>
